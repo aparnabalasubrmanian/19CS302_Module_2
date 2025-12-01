@@ -12,34 +12,46 @@ To write a C program to perform multiplication and division of two numbers using
 6. End.    
 
 ## Program:
-```c program
-#include<stdio.h> 
-void multiply(int a,int b); 
-void div(int a,int b); 
-int main () 
-{ 
-int a,b; 
-scanf("%d%d",&a,&b); 
-multiply(a,b); 
-div(a,b); 
-} 
-void multiply(int a,int b) 
-{ 
-int product; 
-product= a*b; 
-printf("Multiplication: %d",product); 
-} 
-void div(int a,int b) 
-{ 
-int result; 
-result=a/b; 
-printf("\nDivision: %d",result); 
-} 
+```
+#include<stdio.h>
+void multiply();
+void divide();
+
+int main()
+{
+    multiply(); 
+    divide();   
+    
+    return 0;
+}
+
+void multiply()
+{
+    float a, b, mul;
+    scanf("%f %f", &a, &b);
+    
+    mul = a * b;
+    printf("Multiplication is: %.2f\n", mul);
+}
+
+void divide()
+{
+    float a, b, div;
+    scanf("%f %f", &a, &b);
+    
+    if(b == 0){
+        printf("Division not possible (Denominator is 0)\n");
+    } else {
+        div = a / b;
+        printf("Division is: %.2f", div);
+    }
+}
+
 ```
 
 ## Output:
+<img width="595" height="301" alt="image" src="https://github.com/user-attachments/assets/2a4064b6-b457-40e2-ac3e-ceabbe951f2a" />
 
-![image](https://github.com/user-attachments/assets/0e5da423-26d0-4f8a-879f-7c9d8aa8a7a0)
 
 
 ## Result:
