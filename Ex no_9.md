@@ -1,46 +1,48 @@
+
 # EX 9 C program to find the sum of odd digits using do while loop.
-## DATE: 3.3.2025
+## DATE: 3.3.25
 ## AIM:
 To write a C program to find the sum of odd digits using do while loop.
 
 ## Algorithm
-```
-1.Start the program.
-2.Take input of a number num and initialize sum to 0.
-3.Use a do-while loop to extract each digit of num.
-4.Check if the digit is odd; if yes, add it to sum.
-5.Print the sum and end the program. 
-```
+1. Start the program.
+2. Read the input number from the user.
+3. Initialize sum = 0.
+4. Using a do while loop.
+5. Repeat the loop until num becomes 0.
+6. Display the sum.
+7. End.
+
 ## Program:
 ```
 /*
-Program to find the sum of odd digits using do while loop.
 Developed by: Aparna RB
-RegisterNumber: 212222220005
-#include<stdio.h>
-int main()
-{    
-    int sum,n,i;  
-    sum=0;    
-    scanf("%d",&n);   
-    for(i=0;i<=n;i++)  
-    {      
-        if(i%2!=0)       
-        {            
-            sum=sum+i;    
-        }    
-        
-    }   
-    printf("%d",sum);   
-    return 0;
-    
-}
+RegisterNumber:  212222220005
 */
+#include <stdio.h>
+
+int main()
+{
+    int num, digit, sum = 0;
+    scanf("%d", &num);
+    int temp = num; 
+    do
+{
+        digit = num % 10;
+        if (digit % 2 != 0)
+ {
+            sum += digit;
+        }
+        num /= 10;
+    } while (num != 0);
+    printf("Sum of odd digits of %d is: %d\n", temp, sum);
+    return 0;
+}
 ```
 
 ## Output:
+![image](https://github.com/user-attachments/assets/e08bad4e-eb4e-4088-9415-6652a806158a)
 
-<img width="1314" height="364" alt="image" src="https://github.com/user-attachments/assets/55d09e61-4d1e-4d6c-9710-cb7606b43cd2" />
 
 
 ## Result:
