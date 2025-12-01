@@ -16,22 +16,34 @@ To write a C program to find the factorial of a given number using a function wi
 ## Program:
 ```
 #include<stdio.h>
+int factorial(int n);
+
 int main()
 {
-    int a,i,fact=1;
-    scanf("%d",&a);
-    for(i=1;i<=a;i++){
-        fact=fact*i;
-    }
-    printf("Factorial value is: %d",fact);
-    
+    int num, fact;
+    scanf("%d", &num);  
+    fact = factorial(num); // function call 
+    printf("Factorial value is: %d", fact);
     return 0;
 }
+
+int factorial(int n)
+{
+    int i, f = 1;
+    
+    for(i = 1; i <= n; i++){
+        f = f * i;
+    }
+    
+    return f; // returning result
+}
+
 
 ```
 
 ## Output:
-<img width="1204" height="406" alt="image" src="https://github.com/user-attachments/assets/05771cfd-6b9f-41fa-aa4e-7b5018a228ba" />
+<img width="621" height="239" alt="image" src="https://github.com/user-attachments/assets/1803ffef-7ed5-4809-a3b4-a1b8d819243d" />
+
 
 
 
