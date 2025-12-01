@@ -4,6 +4,7 @@
 To write a C program to find the factorial of a given number using a function with arguments and return type.
 
 ## Algorithm
+```
 1. Start  
 2.Declare variables a, i, and fact = 1
 3.Read input value and store it in a
@@ -11,7 +12,7 @@ To write a C program to find the factorial of a given number using a function wi
 5.Multiply fact by i and store result in fact
 6.Print fact as the factorial value
 7.Stop
-
+```
 ## Program:
 ```
 #include<stdio.h>
