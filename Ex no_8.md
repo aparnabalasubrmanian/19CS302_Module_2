@@ -1,48 +1,45 @@
-
-# EX 9 C program to find the sum of odd digits using do while loop.
-## DATE: 3.3.25
+# EX 8 C program to perform multiplication and division of two numbers using functions (without argument and without return type).
+## DATE: 3.3.2025
 ## AIM:
-To write a C program to find the sum of odd digits using do while loop.
+To write a C program to perform multiplication and division of two numbers using functions (without argument and without return type).
 
-## Algorithm
-1. Start the program.
-2. Read the input number from the user.
-3. Initialize sum = 0.
-4. Using a do while loop.
-5. Repeat the loop until num becomes 0.
-6. Display the sum.
-7. End.
+## Algorithm:
+1. Start. 
+2. Declare the variables. 
+3. Prompt the user to enter a value. 
+4. Read the value using scanf. 
+5. Enter number for multiplication and division. 
+6. End.    
 
 ## Program:
-```
-/*
-Developed by: Aparna RB
-RegisterNumber:  212222220005
-*/
-#include <stdio.h>
-
-int main()
-{
-    int num, digit, sum = 0;
-    scanf("%d", &num);
-    int temp = num; 
-    do
-{
-        digit = num % 10;
-        if (digit % 2 != 0)
- {
-            sum += digit;
-        }
-        num /= 10;
-    } while (num != 0);
-    printf("Sum of odd digits of %d is: %d\n", temp, sum);
-    return 0;
-}
+```c program
+#include<stdio.h> 
+void multiply(int a,int b); 
+void div(int a,int b); 
+int main () 
+{ 
+int a,b; 
+scanf("%d%d",&a,&b); 
+multiply(a,b); 
+div(a,b); 
+} 
+void multiply(int a,int b) 
+{ 
+int product; 
+product= a*b; 
+printf("Multiplication: %d",product); 
+} 
+void div(int a,int b) 
+{ 
+int result; 
+result=a/b; 
+printf("\nDivision: %d",result); 
+} 
 ```
 
 ## Output:
-![image](https://github.com/user-attachments/assets/e08bad4e-eb4e-4088-9415-6652a806158a)
 
+![image](https://github.com/user-attachments/assets/0e5da423-26d0-4f8a-879f-7c9d8aa8a7a0)
 
 
 ## Result:
